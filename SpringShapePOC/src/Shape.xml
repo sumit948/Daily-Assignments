@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	<bean class="com.POC2.ShapeInterface.Rectangle" id="rect1">
+ 		<property name="length" value="10"></property>
+ 		<property name="width" value="10"></property>
+ 		<property name="hight" value="10"></property>
+ 	</bean>
+ 	<bean class="com.POC2.ShapeInterface.Circle" id="circle1">
+ 		<property name="radius" value="07"></property>
+ 		
+ 	</bean>
+    <!-- bean definitions here -->
+    
+ 
+</beans>

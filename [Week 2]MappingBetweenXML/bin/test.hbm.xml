@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="Test.Author" table="Author">
+		<set cascade="all" name="BOOKS">
+		  	<key column = "authorid"/>
+		  	<one-to-many class="Test.Books"/>
+		</set>
+	</class>
+	<class name="Test.Books" table="Books">
+		<set cascade="all" name="BOOKS">
+		  	<key column = "authorid"/>
+		  	<one-to-many class="Test.Books"/>
+		</set>
+	</class>
+</hibernate-mapping>

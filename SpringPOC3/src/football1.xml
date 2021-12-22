@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	
+    <!-- bean definitions here -->
+    <!-- Bean Configuration -->
+    <bean class="Predator" id="predator">
+    		
+    </bean>
+    
+    <!-- Bean wiring -->
+    <bean class="Football" id="kaka" >
+    	<property name="football" value="Adidas"></property>
+    	<property name="boots" ref="predator"></property>	
+    </bean>
+    
+    <!-- Bean autowiring 
+    <bean class="Football" id="kaka" autowire="byName">
+    <property name="football" value="Adidas"></property>
+    </bean>
+ 	-->
+ 	
+</beans>

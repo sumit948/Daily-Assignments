@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	<bean class="com.POC1.Order.Customer" id="customer1">
+ 		<property name="customerId" value="10"></property>
+ 	</bean>
+ 	<bean class="com.POC1.Order.Product" id="product1">
+ 		<property name="productId" value="07"></property>
+ 		<property name="productName" value="Food"></property>
+ 		<property name="productType" value="Veg"></property>
+ 	</bean>
+    <!-- bean definitions here -->
+    <bean class="com.POC1.Order.Order" id ="order1">
+    	<!-- Dependency injection using Setter Methods -->
+    	<property name="cust" ref="customer1"></property>
+    	<property name="product" ref="product1"></property>
+    	<property name="orderID" value="54"></property>
+    </bean>
+ 
+</beans>

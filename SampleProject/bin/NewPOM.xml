@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <!-- bean definitions here -->
+    <bean class="Employee" name="employee1">
+    	<property name="empoloyeeID" value="80001"></property> <!-- injecting data -->
+    	<property name="employeeName" value="Jhon Weak"></property>
+    	<property name="employeeDepartment" value="Enterprise Application Development"></property>
+    	<property name="employeeRole" value="Assocaite Trainee"></property>
+    	<property name="employeeSalary" value="true"></property>
+    </bean>
+ 
+</beans>
