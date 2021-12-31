@@ -1,4 +1,4 @@
-package com.example.springsecurity.Week4.springsecurity.memoryconfig;
+package com.example.RestPoc2.Week4.RestPoc2.Security;
 
 import javax.sql.DataSource;
 
@@ -13,7 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-public class MemoryConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private DataSource dataSource;
 	
@@ -29,11 +29,12 @@ public class MemoryConfig extends WebSecurityConfigurerAdapter {
     	String adminPassword = passwordEncoder().encode("admin");
         auth.inMemoryAuthentication().withUser("jhon").password(userPassword)
              .roles("USER").and().withUser("admin")
-            .password(adminPassword).credentialsExpired(false).accountExpired(false).accountLocked(false)
+            .password(adminPassword).credentialsExpired(true).accountExpired(true).accountLocked(true)
             .authorities("WRITE_PRIVILEGES", "READ_PRIVILEGES").roles("ADMIN");
     }
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+	
 }
