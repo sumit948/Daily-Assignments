@@ -13,6 +13,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/sumit/Downloads/tomee/apache-tomee-microprofile-9.0.0-M7/apache-tomcat-10.0.10/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sumitm/Downloads/apache tomee/apache-tomee-microprofile-9.0.0-M7/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
